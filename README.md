@@ -5,7 +5,7 @@ Use a cheap RTC to wake up your Arduino in Deep Sleep
 
 ### INFORMATION  
 
-The **DS2131 library** I'm using in this demo (I do wish each developer used a unique name!)  
+The **DS3231 library** I'm using in this demo (I do wish each developer used a unique name!)  
 https://github.com/rodan/ds3231
 
 Alternative **DS3231 library** by Northern Widget, has some nice features  
