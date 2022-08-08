@@ -1,0 +1,27 @@
+DS3231 Wiring details:
+
+VCC - +5v on Arduino
+GND - GND on Arduino
+
+SDA - A4 or pin marked SDA (Serial I2C Data)
+SCL - A5 or pin marked SCL (Serial I2C Clock)
+
+SQW - 'Square Wave' but we're using this to trigger the Arduino
+when the alarm time is reached. The pin  goes LOW at alarm time.
+Connect to the interrupt pin D3 (You can also use D2 to 
+wake up the Arduino but we're using that to flash an LED).
+
+Connect an LED with a 150 ohm resistor in series from pin 2 to GND.
+
+The Arduino chip in my video is just an ATMega328P wired as follows:
+
+VCC - +5v
+GND - GND
+0.1μA capacitor between VCC and GND
+0.1μA capacitor between AVCC and GND
+
+NOTE: it has been flashed to run from the INTERNAL 8MHz oscillator.
+
+If you have a standard Arduino board you can still try all this out
+but your Arduino will consume too much current when sleeping. But OK
+for a demo!
